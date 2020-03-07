@@ -1,4 +1,5 @@
 <?php
+include('funciones.php');
 
 echo("clase 4 bucles, arreglos y  funciones");
 //array indexado
@@ -91,5 +92,18 @@ foreach($usuarios as $clavesArreglosUnidimencionales=>$arreglosUnidimencionales)
 
 }
 
+//calcular la edad de dos personas
+echo("<br>...................<br>");
+calcularEdad(1998);
+echo("<br>");
+calcularEdad2(1998,2020);
+echo("<br>");
+$edad3=calcularEdad3(1998,2020);
+echo("La edad de la persona es: ".$edad3);
+
+//arreglo que se llena con una funcion
+("<br>...................<br>");
+$edades=array('edad1'=>calcularEdad3(1997,2020), 'edad2'=>calcularEdad3(1998,2020));
+print_r($edades);
 
 ?>  
